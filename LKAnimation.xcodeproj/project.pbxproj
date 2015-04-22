@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0485DDA41AE7822C000198E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485DDA31AE7822C000198E6 /* AppDelegate.swift */; };
-		0485DDA61AE7822C000198E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485DDA51AE7822C000198E6 /* ViewController.swift */; };
-		0485DDA91AE7822C000198E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0485DDA71AE7822C000198E6 /* Main.storyboard */; };
 		0485DDAB1AE7822C000198E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0485DDAA1AE7822C000198E6 /* Images.xcassets */; };
 		0485DDAE1AE7822C000198E6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0485DDAC1AE7822C000198E6 /* LaunchScreen.xib */; };
 		0485DDBA1AE7822D000198E6 /* LKAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485DDB91AE7822D000198E6 /* LKAnimationTests.swift */; };
+		0485DDC41AE785E0000198E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0485DDC31AE785E0000198E6 /* Main.storyboard */; };
+		0485DDC81AE78617000198E6 /* HeartEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485DDC61AE78617000198E6 /* HeartEmitter.swift */; };
+		0485DDC91AE78617000198E6 /* SnowFlakeEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485DDC71AE78617000198E6 /* SnowFlakeEmitter.swift */; };
+		0485DDCB1AE78645000198E6 /* SnowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485DDCA1AE78645000198E6 /* SnowViewController.swift */; };
+		0485DDCD1AE7864D000198E6 /* HeartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485DDCC1AE7864D000198E6 /* HeartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +32,16 @@
 		0485DD9E1AE7822C000198E6 /* LKAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LKAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0485DDA21AE7822C000198E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0485DDA31AE7822C000198E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0485DDA51AE7822C000198E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0485DDA81AE7822C000198E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0485DDAA1AE7822C000198E6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0485DDAD1AE7822C000198E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0485DDB31AE7822D000198E6 /* LKAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0485DDB81AE7822D000198E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0485DDB91AE7822D000198E6 /* LKAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKAnimationTests.swift; sourceTree = "<group>"; };
+		0485DDC31AE785E0000198E6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0485DDC61AE78617000198E6 /* HeartEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartEmitter.swift; sourceTree = "<group>"; };
+		0485DDC71AE78617000198E6 /* SnowFlakeEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowFlakeEmitter.swift; sourceTree = "<group>"; };
+		0485DDCA1AE78645000198E6 /* SnowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowViewController.swift; sourceTree = "<group>"; };
+		0485DDCC1AE7864D000198E6 /* HeartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +83,13 @@
 		0485DDA01AE7822C000198E6 /* LKAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				0485DDC51AE78605000198E6 /* Lib */,
 				0485DDA31AE7822C000198E6 /* AppDelegate.swift */,
-				0485DDA51AE7822C000198E6 /* ViewController.swift */,
-				0485DDA71AE7822C000198E6 /* Main.storyboard */,
-				0485DDAA1AE7822C000198E6 /* Images.xcassets */,
+				0485DDC31AE785E0000198E6 /* Main.storyboard */,
 				0485DDAC1AE7822C000198E6 /* LaunchScreen.xib */,
 				0485DDA11AE7822C000198E6 /* Supporting Files */,
+				0485DDCA1AE78645000198E6 /* SnowViewController.swift */,
+				0485DDCC1AE7864D000198E6 /* HeartViewController.swift */,
 			);
 			path = LKAnimation;
 			sourceTree = "<group>";
@@ -90,6 +97,7 @@
 		0485DDA11AE7822C000198E6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0485DDAA1AE7822C000198E6 /* Images.xcassets */,
 				0485DDA21AE7822C000198E6 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +118,15 @@
 				0485DDB81AE7822D000198E6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0485DDC51AE78605000198E6 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				0485DDC61AE78617000198E6 /* HeartEmitter.swift */,
+				0485DDC71AE78617000198E6 /* SnowFlakeEmitter.swift */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,7 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0485DDA91AE7822C000198E6 /* Main.storyboard in Resources */,
+				0485DDC41AE785E0000198E6 /* Main.storyboard in Resources */,
 				0485DDAE1AE7822C000198E6 /* LaunchScreen.xib in Resources */,
 				0485DDAB1AE7822C000198E6 /* Images.xcassets in Resources */,
 			);
@@ -212,7 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0485DDA61AE7822C000198E6 /* ViewController.swift in Sources */,
+				0485DDC91AE78617000198E6 /* SnowFlakeEmitter.swift in Sources */,
+				0485DDCB1AE78645000198E6 /* SnowViewController.swift in Sources */,
+				0485DDC81AE78617000198E6 /* HeartEmitter.swift in Sources */,
+				0485DDCD1AE7864D000198E6 /* HeartViewController.swift in Sources */,
 				0485DDA41AE7822C000198E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,14 +256,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0485DDA71AE7822C000198E6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0485DDA81AE7822C000198E6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0485DDAC1AE7822C000198E6 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -409,6 +421,7 @@
 				0485DDBF1AE7822D000198E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0485DDC01AE7822D000198E6 /* Build configuration list for PBXNativeTarget "LKAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +430,7 @@
 				0485DDC21AE7822D000198E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
